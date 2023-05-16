@@ -1,0 +1,55 @@
+body {
+  background-color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.container-column {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  background: whitesmoke;
+  padding: 3px;
+  margin: 2px;
+}
+#left {
+  width: 20%;
+  height: auto;
+  background: white;
+}
+#right {
+  width: 80%;
+  height: auto;
+}
+.item-box {
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+  width: auto;
+  height: auto;
+}
+.item-box-white {
+  background: white;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+}
+.item-box-whitea: hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

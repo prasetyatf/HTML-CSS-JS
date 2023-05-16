@@ -1,0 +1,79 @@
+body {
+  background-color:whitesmoke;
+}
+
+.header {
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  background-color: steelblue;
+  font-size: 30 px;
+}
+
+/* Grouping CSS Selector */
+h1 {
+  text-align: center;
+  color: white;
+}
+h2,
+h3,
+h4 {
+  text-align: left;
+  color: white;
+}
+
+/* CSS Selector Element */
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+}
+
+/* CSS Selector for nav bar */
+ul.nav {
+  list-style-type: none;
+  margin: 2px;
+  padding: 0px;
+  text-align: center;
+}
+li.nav {
+  display: inline;
+  margin: 2px;
+}
+a {
+  padding: 10px;
+  background-color:steelblue;
+}
+
+a:link {color: white;}
+
+li a:hover {
+  background-color: rgb(4, 66, 158);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.flex-container > div {
+  background-color:steelblue;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+
+.comment {
+  float: left;
+  padding: 50%;
+  width: 70%;
+}
+
+/* CSS Selector id */
+#fname {
+}
+
+/* CSS Selector class */
+.center {
+}
+
+/* CSS Selector spesifik */
+p.center {
+}

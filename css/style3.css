@@ -1,0 +1,26 @@
+body {
+  background-color: wheat;
+}
+.container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+.container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  justify-content: center;
+}
+.item {
+  text-align: center;
+  background: tomato;
+  padding: 5px;
+  width: 100px;
+  height: 60px;
+  color: wheat;
+  font-size: small;
+  margin: 2px;
+}
