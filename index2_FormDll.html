@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tegar Belajar HTML & CSS</title>
+
+    <!-- CSS external -->
+    <link rel="stylesheet" href="css/style-form.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <h1><b>Belajar HTML & CSS</b></h1>
+    </header>
+    <!-- NAVIGATION -->
+    <nav>
+      <ul class="nav">
+        <li class="nav"><a href="#about">About</a></li>
+        <li class="nav"><a href="#galeri">Galeri</a></li>
+      </ul>
+    </nav>
+    <!-- ARTICLE -->
+
+      <div class="flex-container">
+      <div>
+        <h2>CSS: Cascading Style Sheets</h2>
+      <p><i>Oleh: Tegar</i></p>
+      <b>Sumber CSS</b><br>
+      <p>CSS memiliki 3 jenis: <b>Inline, External, Internal.</b> <br />
+        <ul>
+          <li><b>Inline</b> menambahkan atribut pada elemen html. </li><br />
+          <li><b>Inlternal</b> menambahkan CSS pada element &lt;style&gt;
+          &lt;&frasl;style&gt; pada head.</li>
+          <br />
+          <li> <b>External</b> menambahakan elemen link yang merujuk pada file CSS.</li>
+        </ul>
+      </p>
+      <p>Penulisan syntax CSS bergantung pada HTML. apakah itu element(p{}), id(#fname{}), class(.center{}). Penulisannya bisa spesifik di suatu elemen html seperti p.center{} atau spesifik berada di hirarki html seperti ul li{} atau
+         grouping h1,h2,h3{harus memiliki declaration yang sama}
+      </p>
+      <p><b>Specificity</b><br>
+      Penentuan CSS Selector mana yang dieksekusi duluan berdasarkan hirarki di css,
+      jika CSS selector memiliki nama yang sama, dan declaration yang sama, maka yang paling bawah
+      yang dieksekusi. <br>
+      Penentuan lain adalah dengan mengukur kadar spesifikasinya. Makin spesifik dan makin banyak, makin besar nilainya, vice versa. <br>
+      Urutan dari yang paling spesifik: Inline css, id, class, element.
+      </p>
+      
+      <!-- Text Area -->
+      <h3>Kolom Komentar</h3>
+      <form action="/komentar.php" method="GET">
+        <label for="komentar">Tambahakan Komentar</label><br>
+        <textarea name="komentar" id="komentar" cols="30" rows="10"></textarea><br>
+        <input type="button" value='Submit'>
+      </form>
+      </div>
+    <!-- ASIDE -->
+    <!-- Login -->
+    <!-- POST digunakan untuk mengirim data secara AMAN. misal password -->
+    <!-- JANGAN GUNAKAN GET UNTUK PASSWORD, KARENA AKAN TERLIHAT DI LINK -->
+
+      <div>
+      <h3>Login</h3>
+      <form action="/login.php" method="POST">
+        <label for="name">Nama:</label><br>
+        <input type="text" name="name" id="name" required minlength="5"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" name="pwd" id="pwd" required minlength="5"><br>
+        <label for="remember-me">Remember Me</label>
+        <input type="checkbox" id="remember-me" name="remember-me" checked><br>
+        <input type="submit" value="Submit"><br>
+      </form>
+      </div>
+      </div>
+    <!-- FOR PADA LABEL HARUS = INPUT ID TO BIND THEM TOGETHER -->
+    <!-- NAME PADA INPUT DIGUNAKAN UNTUK MENGIRIM KE HANDLER("/login.php") -->
+    <!-- required & minliength digunakan untuk form validation -->
+
+    <footer>Created by Tegar 2023</footer>
+  </body>
+</html>
