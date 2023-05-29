@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tegar Belajar HTML & CSS</title>
 
+    <!-- CSS Internal -->
+    <!-- weight & height di .span-konten tidak ngefek karena inline. -->
+    <style>
+      .div-konten {background-color: violet;
+        weight: 200px;
+        height: 220px;
+      }
+      .span-konten {background-color: blueviolet;
+        weight: 80px;
+        height: 80px;
+      }
+    </style>
+
     <!-- CSS external -->
     <link rel="stylesheet" href="css/style-form.css" />
   </head>
@@ -30,7 +43,7 @@
       <p>CSS memiliki 3 jenis: <b>Inline, External, Internal.</b> <br />
         <ul>
           <li><b>Inline</b> menambahkan atribut pada elemen html. </li><br />
-          <li><b>Inlternal</b> menambahkan CSS pada element &lt;style&gt;
+          <li><b>Internal</b> menambahkan CSS pada element &lt;style&gt;
           &lt;&frasl;style&gt; pada head.</li>
           <br />
           <li> <b>External</b> menambahakan elemen link yang merujuk pada file CSS.</li>
@@ -46,7 +59,30 @@
       Penentuan lain adalah dengan mengukur kadar spesifikasinya. Makin spesifik dan makin banyak, makin besar nilainya, vice versa. <br>
       Urutan dari yang paling spesifik: Inline css, id, class, element.
       </p>
-      
+      <p><b>Layouting</b><br>
+      Element/tag html digunakan untuk memberi arti pada sebuah konten, disebut semantic. <br>
+      contoh: tag p = paragraf, tag h1 =  heading utama. tetapi ada beberapa tag yang tidak memiliki <br>
+      arti, seperti &ltdiv&gt, &ltspan&gt. Dua tag itu digunakan untuk mengelompokkan tag-tag html lain. <br>
+      Setiap tag html itu berada di dalam sebuah kotak, display pada CSS mengatur perilaku kotak tsb. <br>
+      Semua tag html memiliki default display pada CSS(meski kamu tidak menulisnya), biasanya kalau tidak inline maka block, &ltdiv&gt memeiliki default display block, &ltspan&gt memiliki display: inline. <br>
+      </p>
+      <p>
+      Jenis display: inline, block, inline-block, none. <br>
+      Elemen-elemen html dengan default display inline: b, strong, i, a, span, sub, sup, button, input, label, textarea, select. <br>
+      Elemen-elemen html dengan default display block: div, p, h1, form, ul, li, table.<br>
+      Elemen-elemen html dengan default display inline-block: <b>tidak ada :p</b><br>
+      Elemen-elemen html dengan default display none: style, script, meta, link<br> 
+    </p>
+    <p>Contoh penggunaan block(violet) dan inline(blue violet)<br>
+      <div class="div-konten">
+      Lorem ipsum <span class="span-konten">ini adalah display: inline. height & weight tidak bisa diubah dan bergantung pada h & w kontennya, kecuali tag image. <br>
+      Jika displaynya inline, margin & paddingnya hanya berubah secara horizontal saja, elemen ini adalah yang tidak menambah baris baru.</span> . <br>
+      Sementara, bagian yang berwarna violet ini adalah block, kita bisa mengatur weight & height, margin & padding secara horizontal & vertical, dapat menjadi wadah dari display lain. <br>
+      quisquam necessitatibus harum autem quam dolores vero fugit, ab officia error atque inventore magni recusandae mollitia vel cum in. <br>
+      Inline-block itu seperti inline yang dapat diubah height & weight secara horizontal & vertical. <br>
+      Sementara display: none; dapat digunakan untuk menghilangkan tag html.
+      </div>
+    </p>
       <!-- Text Area -->
       <h3>Kolom Komentar</h3>
       <form action="/komentar.php" method="GET">
