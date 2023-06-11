@@ -1,0 +1,12 @@
+body {
+  background-color: wheat;
+}
+
+img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.container {
+  background-color: whitesmoke;
+}

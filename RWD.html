@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Design</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/rwd-css.css">
+  </head>
+  <body>
+      <div class="container">
+    <h1>Responsive Web Design</h1>
+    <h2>Viewport</h2>
+    <p>
+      viewport adalah area yang dapat dilihat oleh user di suatu page html.
+      <br />
+      viewport ini dihandle oleh tag meta. tag meta ini memliki atribut
+      content="width=device-width" <br />
+      yang berarti witdh page html akan mengikuti width device. initial-scale
+      menghandle zoom level saat page pertama x diload. <br />
+    </p>
+    <p>
+    <h2>Aturan Ukuran Konten Untuk Viewport</h2>
+      Semua user di beberapa device menjelajah page secara vertikal(scrolling).
+      Jadi ketika user dipaksa untuk scrolling horizontally atau perlu zoom
+      untuk melihat keseluruhan page, maka it's poor user experience. <br>
+      <b>Aturan:</b> <br>
+      <ol>
+          <li><p><b>Jangan guanakan fix width yang besar.</b></p></li>
+          <li><p><b>Jangan biarkan konten mengandalkan lebar viewport tertentu untuk merender dengan baik.</b></p></li>
+          <li><p><b>Lebih baik gunakan relativ width value daripada absoulut, dan hati-hati menggunakan absolut positioning value.</b></p></li>
+       </ol> <br>
+       I skip RWD grid views, RWD media queries. <br>
+         </p>
+         <p><h2>RWD Images</h2>
+        Best practice untuk css img adalah, menggunakan max-width=100% dan max-height=auto. <br>
+        Bisa juga gunakan element &lt;picture&gt; untuk RWD Images. <br>
+        Untuk background image perhatikan opsi apa saja yang ada di css background-size(persentase, contain, cover). <br>
+        img di bawah ini menggunakan css img RWD.<br>
+        <img src="oroc.jpg" alt="oroc-img"> <br>
+        img di bawah ini menggunakan element picture.<br>
+        <picture>
+        <img src="oroc.jpg" alt="oroc-img"> 
+        </picture>    
+        </p>
+        <p>
+            <h2>CSS Framework</h2>
+            Cara lain menerapkan RWD adalah menggunakan CSS Framework, seprti: Bootsrap, w3.css, dll.
+        </p>
+    </div>
+    </body>
+</html>
