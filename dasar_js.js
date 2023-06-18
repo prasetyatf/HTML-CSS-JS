@@ -1,5 +1,7 @@
 //dasar javascript by skillvul
 
+// internal js <script></script>, external js <script src=""></script>
+
 let namaVaribel = "Ini variabel yang dapat diubah";
 const _namaVar = "Ini variabel yg tidak dapat diubah";
 
