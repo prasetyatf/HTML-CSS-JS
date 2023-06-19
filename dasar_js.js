@@ -35,5 +35,14 @@ Apabila kondisi false, maka variabel akan diberi nilai2
 // operator logika: &&, ||, ! (and, or, not)
 
 // function
+function iniFungsi(iniParameter){
+  return iniParameter + "haha";
+}
+consol.log(iniFungsi("ini argument"));
 
+iniJugaFungsi = function(){return "ini juga fungsi"};
+
+// Function Hoisting adalah kita memanggil fungsi dulu, baru membuatnya. tidak berlaku jika fungsi di dalam variabel.
+
+// Local Scope var & Global Scope var
 
