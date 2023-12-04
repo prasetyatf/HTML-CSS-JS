@@ -1,0 +1,185 @@
+:root {
+  --primary: var(#0054b4);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: #e7e7e7;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+
+main {
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+.mainan-border {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  background-color: salmon;
+  line-height: 150px; /* jika line-height = height maka text akan di tengah*/
+  text-align: center;
+  border-radius: 50%; /* jika radius setengah dari height width maka menjadi lingkaran*/
+}
+
+.mainan-border-tr {
+  display: inline-block;
+  font-size: 10px;
+  height: 110px;
+  width: 110px;
+  background-color: salmon;
+  line-height: 110px; /* jika line-height = height maka text akan di tengah*/
+  text-align: center;
+  border-top-right-radius: 50%;
+}
+
+.mainan-border-all {
+  display: inline-block;
+  font-size: 8px;
+  height: 110px;
+  width: 110px;
+  background-color: salmon;
+  line-height: 110px; /* jika line-height = height maka text akan di tengah*/
+  text-align: center;
+  border-radius: 0 50%; /* kiri ke kanan, kanan ke kiri*/
+}
+
+.mainan-border-img {
+  display: inline-block;
+  font-size: 8px;
+  height: 110px;
+  width: 110px;
+  background-color: salmon;
+  line-height: 110px; /* jika line-height = height maka text akan di tengah*/
+  text-align: center;
+  border-radius: 50% 0; /* kiri ke kanan, kanan ke kiri*/
+  background: url(img/LandingImage.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainan-border-setengahlingkaran {
+  font-size: 10px;
+  line-height: 150px;
+  background-color: salmon;
+  height: 150px;
+  width: 150px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  text-align: center;
+}
+
+.bg-img {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  background: url(img/LandingImage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero1 {
+  display: inline-block;
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  background-color: #0054b4;
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  opacity: 0.5;
+}
+
+.hero2 {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  height: 60px;
+  width: 60px;
+  background-color: #b46000;
+  opacity: 0.7;
+}
+
+.rotate {
+  width: 100px;
+  height: 100px;
+  background-color: #0054b4;
+  margin: 1rem;
+  rotate: 10deg;
+}
+
+.rotate:active {
+  transform: rotate(-80deg) rotateY(90deg);
+  transition: .9s;
+}
+
+.scale {
+  width: 100px;
+  height: 100px;
+  background-color: #0054b4;
+  margin: 1rem;
+  scale: -1.1;
+}
+
+.scale:hover {
+  transform: scale(.9, .6); /* scale(x, y) */
+  transition: .7s;
+}
+
+.skew {
+  width: 100px;
+  height: 100px;
+  background-color: #0054b4;
+  margin: 1rem;
+  transform: skew(10deg);
+}
+
+.skew:hover {
+  transition: .6s;
+  transform: skewX(22deg) skewY(77deg);
+}
+
+.translate {
+  width: 100px;
+  height: 100px;
+  background-color: #0054b4;
+  margin: 1rem;
+  transform: translate(81px); /* translate mirip dg poisition: absolut; tp performance lebih bagus*/
+}
+
+.translate:hover {
+  transition: .8s;
+  transform: translate(200px);
+}
+
+.rotate-move {
+height: 100px;
+width: 100px;
+background-color: sienna;
+}
+
+  .container-animation:hover .rotate-move {
+  transition: 1s;
+  transform: rotate(180deg);
+  margin-left: 111px;
+}
